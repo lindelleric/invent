@@ -1,24 +1,21 @@
 {
   "name": "invent",
   "version": "1.0.0",
-  "description": "",
+  "description": "Small scale scraper",
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./index.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Eric Nilsson <eric.nilsson@hotmail.com>",
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.2",
-    "tough-cookie": "^2.5.0"
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.10",
     "@types/request": "^2.48.1",
-    "@types/tough-cookie": "^2.3.4",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
   }

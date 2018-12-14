@@ -21,9 +21,10 @@ r('https://arcamea.com/sv/shop/?add-to-cart=634', () => {
                     let meh = '';
 
                     const items = doc('.cart_item input').map((i, item) => {
-                        console.log('item.attribs', item.attribs['aria-labelledby'], item.attribs['max']);
+                        console.log(item.attribs['aria-labelledby'], item.attribs['max']);
                         meh += `${ item.attribs['max'] } `;
                     });
+
                     console.log(meh);
                 });
             });

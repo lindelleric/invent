@@ -18,16 +18,16 @@ r('https://arcamea.com/sv/shop/?add-to-cart=634', () => {
 
                 r('https://arcamea.com/varukorg', (error, response, body) => {
                     const doc = cheerio.load(body);
-                    let meh = '';
+                    let meh = [];
 
                     console.log('------------------------------');
 
                     const items = doc('.product-quantity input').map((i, item) => {
                         console.log(item.attribs['aria-labelledby'], item.attribs['max']);
-                        meh += `${ item.attribs['max'] } `;
+                        meh.push(item.attribs['max']);
                     });
 
-                    console.log(meh);
+                    console.log(meh.join(', '));
                 });
             });
         });

@@ -20,13 +20,14 @@ r('https://arcamea.com/sv/shop/?add-to-cart=634', () => {
                     const doc = cheerio.load(body);
                     let meh = [];
 
-                    console.log('------------------------------');
+                    console.log('-----------------------------------');
 
                     const items = doc('.product-quantity input').map((i, item) => {
-                        console.log(item.attribs['aria-labelledby'], item.attribs['max']);
+                        console.log(`${item.attribs['aria-labelledby']}:`, item.attribs['max']);
                         meh.push(item.attribs['max']);
                     });
 
+                    console.log('-----------------------------------');
                     console.log(meh.join(', '));
                 });
             });

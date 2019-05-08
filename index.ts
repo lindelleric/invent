@@ -2,7 +2,9 @@
 import * as request from 'request';
 import * as cheerio from 'cheerio';
 
-const r = request.defaults({ jar: true })
+const r = request.defaults({ jar: true });
+
+console.log(new Date().toLocaleString());
 
 r('https://arcamea.com/sv/shop/?add-to-cart=634', () => {
     console.log('30mm Done');

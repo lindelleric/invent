@@ -2,8 +2,8 @@
 Small scale scraper
 
 To run:
-- npm i
-- npm start
+- yarn
+- yarn start
 
 TODO:
 - Add dockerfile
